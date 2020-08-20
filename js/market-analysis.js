@@ -62,7 +62,8 @@ function buildImage(chosenImage){
   
   var radioButton = document.createElement('input');
   radioButton.setAttribute('type', 'radio');
-  radioButton.setAttribute('name', chosenImage.name);
+  radioButton.setAttribute('name', 'sameName');
+  radioButton.setAttribute('alt', chosenImage.name)
   radioButton.setAttribute('src', chosenImage.filepath);
   parentElement.appendChild(radioButton);
   parentElement.appendChild(image);
@@ -70,6 +71,7 @@ function buildImage(chosenImage){
 }
 
 function handleClick(event){
+  event.preventDefault();
   totalClicks++
 
   var name = event.target.value;
@@ -103,8 +105,8 @@ function getRandomNumber(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }
 
-generateRandomImage()
-generateRandomImage()
-generateRandomImage()
-
 document.getElementById('input').addEventListener('click', handleClick)
+
+generateRandomImage()
+generateRandomImage()
+generateRandomImage()

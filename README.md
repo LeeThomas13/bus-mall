@@ -7,3 +7,6 @@ I got my css reset from https://meyerweb.com/eric/tools/css/reset/
 I got the company logo image from pixabay; https://pixabay.com/illustrations/car-vw-transportation-volkswagen-4025379/ all credit goes to Memed_Nurrohmad.
 
 i got my getRandomNumber function from https://www.w3schools.com/js/js_random.asp
+
+I got the idea to add the document.getElementById('input').addEventListener('click', handleClick) from https://www.w3schools.com/.
+
